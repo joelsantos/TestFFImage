@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using FFImageLoading.Forms;
 using Xamarin.Forms;
 
 namespace TestFFImage
@@ -18,9 +18,8 @@ namespace TestFFImage
                 {
                     VerticalOptions = LayoutOptions.Center,
                     Children = {
-                         new Label {
-                             HorizontalTextAlignment = TextAlignment.Center,
-                             Text = "Welcome to Xamarin Forms!"
+                         new CachedImage() {
+                             Source = ImageSource.FromUri(new Uri("https://casamentojoelfilipa.blob.core.windows.net/images/groomsmenbridesmaid.png"))
                          }
                      }
                 }

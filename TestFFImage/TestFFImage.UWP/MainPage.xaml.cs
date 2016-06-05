@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using FFImageLoading.Forms.WinUWP;
 
 namespace TestFFImage.UWP
 {
@@ -21,7 +22,10 @@ namespace TestFFImage.UWP
         {
             this.InitializeComponent();
 
+            CachedImageRenderer.Init();
+
             LoadApplication(new TestFFImage.App());
+
         }
     }
 }
